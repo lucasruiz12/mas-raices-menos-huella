@@ -1,0 +1,171 @@
+.container-neutral-carbon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url('../../assets/images/image-background-trace.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container-neutral-carbon-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.container-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+.text-you-know {
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+.info-you-know {
+    font-size: xx-large;
+    margin: -2vh 0 5vh 0.5vw;
+    color: white;
+}
+
+.container-btn-carbono {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-all-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.container-info-pizza {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+
+.info-pizza-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-pizza-img {
+    height: 30vh;
+    width: 30vh;
+}
+
+.info-pizza-text {
+    color: white;
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+.pizza-img {
+    height: 10vh;
+    width: 10vh;
+}
+
+.pizza-price {
+    font-size: xx-large;
+}
+
+.contianer-btn-carbono-mobile{
+    display: none;
+    width: 100%;
+}
+
+.container-info-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+    height: 50%;
+}
+
+.three-img {
+    height: 10vh;
+    width: 10vh;
+}
+
+.three-price {
+    font-size: xx-large;
+}
+
+@media (max-width: 768px) {
+    .container-neutral-carbon {
+        flex-direction: column-reverse;
+    }
+
+    .container-neutral-carbon-content {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-y: scroll;
+        padding: 1.5rem;
+    }
+
+    .container-btn-carbono{
+        display: none;
+    }
+
+    .contianer-btn-carbono-mobile{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-link-mobile{
+        width: 90%;
+    }
+
+    .container-all-info{
+        width: 100%;
+    }
+
+    .all-container{
+        width: 100% !important;
+    }
+
+    .container-info-text {
+        width: 100%;
+    }
+
+    .text-you-know {
+        font-size: 6vh;
+    }
+
+    .info-you-know {
+        font-size: large;
+    }
+
+    .container-info-pizza {
+        width: 100%;
+    }
+
+    .info-pizza-img {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .info-pizza-text {
+        font-size: 7vh;
+    }
+}

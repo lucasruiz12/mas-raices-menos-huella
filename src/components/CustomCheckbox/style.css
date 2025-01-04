@@ -1,0 +1,97 @@
+.container-checkbox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: x-large;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 33%;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.text-checkbox {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+/* Create a custom checkbox */
+.box-checkbox {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 4vh;
+    width: 4vh;
+    background-color: #eee;
+    border: solid 1px #00000096;
+    border-radius: 0.3rem;
+    margin-bottom: 2vh;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input~.box-checkbox {
+    background-color: #92CD43;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked~.box-checkbox {
+    background-color: #A4B46A;
+}
+
+/* Create the box-checkbox/indicator (hidden when not checked) */
+.box-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the box-checkbox when checked */
+.container-checkbox input:checked~.box-checkbox:after {
+    display: block;
+}
+
+/* Style the box-checkbox/indicator */
+.container-checkbox .box-checkbox:after {
+    left: 12px;
+    top: 5px;
+    width: 1vh;
+    height: 2vh;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .container-checkbox {
+        width: 100%;
+        margin: 1vh 0;
+        font-size: small;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .container-checkbox .box-checkbox:after {
+        left: 10px
+    }
+
+    .box-checkbox {
+        margin-bottom: 0;
+    }
+
+    .text-checkbox {
+        text-align: justify;
+        width: 75%;
+    }
+}

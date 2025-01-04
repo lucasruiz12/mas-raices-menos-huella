@@ -1,0 +1,195 @@
+.container-mission-view {
+    height: 100%;
+    width: 100%;
+}
+
+.mission-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100.1vh;
+    object-fit: fill;
+    transform: translate(-50%, -50%);
+    filter: contrast(80%);
+    z-index: -1;
+}
+
+.mission-content {
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+.mission-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.mission-logo {
+    height: 12vh;
+    /* width: 12vh; */
+}
+
+.mission-tips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 17.5vw;
+    height: 17.5vw;
+    font-size: large;
+    background-color: #FFF2D4;
+    position: absolute;
+    left: 65%;
+    top: 10%;
+    border-radius: 50%;
+    animation: grow 8s ease-out;
+}
+
+.close-mission-tips {
+    height: auto;
+    position: absolute;
+    top: 17%;
+    left: 80%;
+    cursor: pointer;
+    animation: slideInCloseMission 8s ease-out;
+}
+
+
+@keyframes slideInMission {
+    0% {
+        top: -100px;
+    }
+
+    10% {
+        top: 10%;
+    }
+
+    90% {
+        opacity: 0.99;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInCloseMission {
+    0% {
+        top: -100px;
+    }
+
+    10% {
+        top: 17%;
+    }
+
+    90% {
+        opacity: 0.99;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInMobileMission {
+    0% {
+        top: 100%;
+    }
+
+    10% {
+        top: 60%;
+    }
+
+    90% {
+        opacity: 0.99;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.mission-title {
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+.mission-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5vh 0;
+}
+
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 60%;
+    height: 35vh;
+}
+
+.mission-line-text {
+    color: white;
+    font-size: x-large;
+    /* text-align: justify; */
+}
+
+@media (max-width: 768px) {
+    .mission-header {
+        justify-content: center;
+    }
+
+    .mission-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mission-info-container {
+        margin: 5vh 0
+    }
+
+    .mission-title {
+        font-size: 5vh;
+        font-weight: bold;
+    }
+
+    .mission-text {
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.35);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .mission-line-text {
+        color: white;
+        font-size: medium;
+        margin: 0.5rem 0
+    }
+
+    .btn-green {
+        width: 90% !important;
+        align-self: center;
+        font-size: larger !important;
+    }
+
+    .mission-tips {
+        padding: 2rem;
+        width: 60vw;
+        height: 60vw;
+        font-size: larger;
+        background-color: #FFF2D4;
+        position: absolute;
+        left: 20%;
+        top: 60%;
+        animation: slideInMobileMission 8s ease-out;
+        font-size: medium;
+    }
+}

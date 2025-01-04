@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    background-color: #C8D390;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p,
+label,
+h2,
+input {
+    color: #604848;
+    margin: 0;
+}
