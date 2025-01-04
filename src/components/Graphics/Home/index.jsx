@@ -10,7 +10,7 @@ const GraphicsHome = () => {
             <GraphicBar />
             <p className="item-home-tofix"></p>
             <div className="container-button-home">
-                <Link className="container-link" to="/mySubscription">
+                <Link className="container-link" to="/neutralCarbon">
                     <button className="btn-green all-cover-btn">Mitigar tu huella</button>
                 </Link>
             </div>
